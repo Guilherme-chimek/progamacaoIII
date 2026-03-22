@@ -1,0 +1,118 @@
+/* --------------------------
+   Estilo geral do site
+-------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth; /* rolagem suave */
+}
+
+/* --------------------------
+   Header
+-------------------------- */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* --------------------------
+   Menu / Navegação
+-------------------------- */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* --------------------------
+   Seções
+-------------------------- */
+section {
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* --------------------------
+   Footer
+-------------------------- */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* --------------------------
+   Cards de Álbuns
+-------------------------- */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card com efeito vidro fosco */
+.card {
+    position: relative;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1); /* transparente */
+    backdrop-filter: blur(10px); /* efeito fosco */
+    -webkit-backdrop-filter: blur(10px); /* suporte Safari */
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #f39c12;
+}
+
+/* --------------------------
+   Detalhes dos Álbuns
+-------------------------- */
+.album-detalhe {
+    background-color: #1f1f1f;
+    border-left: 5px solid #f39c12;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    position: relative;
+}
