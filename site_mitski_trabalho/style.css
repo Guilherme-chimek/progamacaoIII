@@ -26,7 +26,7 @@ header {
     justify-content: center;
     align-items: center;
     color: #fff;
-}}
+}
 
 /* --------------------------
    Menu / Navegação
@@ -76,19 +76,14 @@ footer {
 .album-card {
     background-color: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
-    background-image: url(img/lush_background_img.png);
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
 }
-.album-card {
-    background-color: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    background-image: url(img/retired_from_background.png);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-}
+
+/* --------------------------
+   Cards simples
+-------------------------- */
 .card {
     background-color: #1f1f1f;
     padding: 15px;
@@ -102,30 +97,72 @@ footer {
     background-color: #2c2c2c;
 }
 
-
 /* --------------------------
    Detalhes dos Álbuns
 -------------------------- */
 .album-detalhe {
     background-color: #1f1f1f;
-
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.album-detalhe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* 🔥 BOX PRINCIPAL (corrigida) */
 .album-detalhes {
+    position: relative; /* ✅ ESSENCIAL para o botão */
+
     background-color: #1f1f1f;
-    padding: 100px 80px;           /* espaço interno */
-    margin: 80px auto;             /* centraliza o box horizontalmente na página */
+    padding: 100px 80px;
+    margin: 80px auto;
     border-radius: 64px;
     box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+
     display: flex;
-    flex-direction: column;        /* mantém conteúdo em coluna */
-    justify-content: flex-start;   /* alinha verticalmente ao topo */
-    align-items: flex-start;       /* alinha horizontalmente à esquerda */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
     max-width: 1200px;
     width: 90%;
-    min-height: 700px;             /* altura mínima */
+    min-height: 700px;
+
     color: #ffffff;
-    text-align: left;              /* texto alinhado à esquerda */
+    text-align: left;
+}
+
+/* 🔘 BOTÃO */
+.btn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 🖼️ IMAGEM DO BOTÃO */
+.btn img {
+    width: 16px;
+    height: 16px;
 }
