@@ -5,19 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitski - Cantora e Compositora</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<style>
-        header {
-            background-image: url(img/header_mitski.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+     <style>
+        #btnTopo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            font-size: 16px;
+        }
+        #btnTopo:hover {
+            background-color: rgba(255,255,255,0.2);
         }
     </style>
+</head>
+<body>
 <header>
     <h1>Mitski</h1>
     <p>Cantora e Compositora Indie</p>
+    <style> 
+    header {
+    height: 400px;
+    background-image: url(img/header_mitski.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}</style>
 </header>
 
 <nav>
@@ -30,11 +54,11 @@
     <div class="container">
         <h2>Sobre Mitski</h2>
         <p>
-        Mitski Miyawaki, conhecida artisticamente como Mitski, é uma cantora e compositora
-        nipo-americana. Mitski é uma cantora e compositora japonesa-americana que se destaca
-        por suas letras intensas e profundamente introspectivas, explorando temas como amor, 
-        solidão, identidade e relacionamentos com uma honestidade rara. Sua música mistura elementos
-        de rock, eletrônico, folk e até country, criando arranjos únicos que reforçam a emoção de suas palavras
+        Mitski nasceu em 27 de setembro de 1990 no Japão, filha de pai americano e mãe japonesa. 
+        Durante a infância e adolescência, viveu em mais de 13 países antes de terminar o ensino 
+        médio na Turquia. Nos Estados Unidos, estudou cinema no Hunter College e depois composição
+        musical na SUNY Purchase. Mitski se destacou por sua sensibilidade artística e capacidade 
+        de transitar entre experiências pessoais e narrativas fictícias em suas composições.
         </p>
         <img src="img/mitski.jpg" alt="Mitski">
     </div>
@@ -44,9 +68,21 @@
     <div class="container">
         <h2>Carreira</h2>
         <p>
-            Mitski começou sua carreira lançando álbuns independentes enquanto estudava música.
-            Ganhou destaque internacional com o álbum "Puberty 2" e consolidou seu sucesso com
-            "Be the Cowboy", que recebeu aclamação da crítica.
+        Mitski lançou seus dois primeiros álbuns de forma independente na universidade: Lush (2012)
+        e Retired from Sad, New Career in Business (2013). Em 2014, estreou em gravadora com 
+        Bury Me at Makeout Creek, migrando para o indie rock com guitarras e letras sobre juventude
+        e desilusão. Em 2016, lançou Puberty 2, consolidando-se no mainstream com temas de isolamento,
+        identidade e relacionamentos, incluindo o single de destaque “Your Best American Girl”.
+        <br>
+        Em 2018, Be the Cowboy marcou um novo estágio criativo, incorporando personagens fictícios e 
+        explorando perspectivas diversas, como casamento e envelhecimento. O álbum foi amplamente aclamado, 
+        entrou na Billboard 200 e teve turnês de sucesso até 2019, quando Mitski entrou em hiato, mantendo 
+        apenas algumas colaborações musicais durante esse período, A cantora retornou no ano de 2023, com o 
+        lançamento de seu sétimo álbum, The land is inhospitable and so are we, que recebeu aclamação da crítica e
+        marcou seu retorno triunfante à cena musical. Em 2026, lançou seu oitavo álbum, Nothing's about to happen to me,
+        continuando a explorar temas de identidade, amor, medo e vulnerabilidade.
+
+
         </p>
     </div>
 </section>
@@ -54,11 +90,46 @@
     <div class="container">
         <h2>Álbuns</h2>
         <p>
-            Mitski lançou vários álbuns aclamados pela crítica, cada um explorando diferentes
-            aspectos de sua identidade e experiências pessoais.
+        Os álbuns de Mitski combinam introspecção emocional com uma evolução sonora marcante ao longo da carreira.
+        Seus primeiros trabalhos, Lush e Retired from Sad, New Career in Business, mostram influência clássica, 
+        arranjos orquestrais e uma sensibilidade delicada, com forte vínculo com experiências pessoais.
+        Com Bury Me at Makeout Creek, ela migra para o indie rock, trocando piano por guitarras, explorando a raiva,
+        frustração e a imprudência da juventude, com gravações mais cruas e diretas.
+        <br>
+        Puberty 2 mistura elementos de seus trabalhos anteriores, abordando temas de isolamento, depressão e amadurecimento,
+        com letras intensamente pessoais e emocionais. Em Be the Cowboy, Mitski expande sua abordagem artística, incorporando
+        personagens e narrativas fictícias, explorando temas que vão além de sua experiência pessoal, como casamento e envelhecimento.
+        Musicalmente, combina instrumentos dos álbuns anteriores com sintetizadores e estruturas que lembram números musicais,
+        mostrando sua versatilidade e maturidade criativa.
+        <br>
+        De forma geral, seus álbuns transitam entre introspecção íntima e experimentação sonora, mantendo sempre letras 
+        profundamente emotivas, poéticas e conectadas com identidade, amor, solidão e crescimento pessoal.
         </p>
     </div>
 </section>
+        <button id="btnTopo">⬆️ Topo</button>
+
+<!-- JavaScript para o botão -->
+<script>
+    const btnTopo = document.getElementById("btnTopo");
+
+    // Mostrar botão após rolar 200px
+    window.onscroll = function() {
+        if (window.scrollY > 200) {
+            btnTopo.style.display = "block";
+        } else {
+            btnTopo.style.display = "none";
+        }
+    };
+
+    // Ao clicar, rola suavemente para o topo
+    btnTopo.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
 <section id="albuns">
     <div class="container">
         <a href="#lush">
