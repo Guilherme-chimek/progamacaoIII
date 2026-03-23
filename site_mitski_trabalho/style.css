@@ -1,191 +1,160 @@
-/* --------------------------
-   Estilo geral do site
--------------------------- */
+/* -------------------------- Estilo geral do site -------------------------- */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #111;
-    color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: #fff;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-/* --------------------------
-   Header
--------------------------- */
+/* -------------------------- Header -------------------------- */
 header {
-    height: 400px;
-    background-image: url(./img/mitski_header.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+  position: relative;
+  height: 400px;
+  background-image: url(./img/mitski_header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
-/* --------------------------
-   Menu / Navegação
--------------------------- */
+header::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+header > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* -------------------------- Menu / Navegação -------------------------- */
 nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-/* --------------------------
-   Seções
--------------------------- */
+nav a:hover {
+  color: #f0a500;
+}
+
+/* -------------------------- Seções -------------------------- */
 section {
-    padding: 20px;
+  padding: 20px;
 }
 
 .container {
-    max-width: 900px;
-    margin: auto;
+  max-width: 900px;
+  margin: auto;
 }
 
 img {
-    max-width: 100%;
-    border-radius: 10px;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
-/* --------------------------
-   Footer
--------------------------- */
+/* -------------------------- Footer -------------------------- */
 footer {
-    background-color: #1f1f1f;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
 }
 
-/* --------------------------
-   Cards de Álbuns
--------------------------- */
+/* -------------------------- Cards de Álbuns -------------------------- */
 .album-card {
-    background-color: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 80px;
 }
- h3 {
-    color: #4b6434; 
-  }
 
-
-  ul.faixas {
-    list-style: none;
-    padding: 0;
-  }
-
-
-  ul.faixas li {
-    background-color: rgba(75, 96, 67, 0.5);
-    color: white;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-  }
-
-  /* Efeito ao passar o mouse */
-  ul.faixas li:hover {
-    background-color: rgba(75, 96, 67, 0.7);
-    cursor: pointer;
-  }
-</style>
-/* --------------------------
-   Cards simples
--------------------------- */
+/* -------------------------- Cards simples -------------------------- */
 .card {
-    background-color: #1f1f1f;
-    padding: 15px;
-    width: 250px;
-    border-radius: 10px;
-    transition: transform 0.3s, background-color 0.3s;
+  background-color: #1f1f1f;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    background-color: #2c2c2c;
+  transform: scale(1.05);
+  background-color: #2c2c2c;
 }
 
-/* --------------------------
-   Detalhes dos Álbuns
--------------------------- */
+/* -------------------------- Detalhes dos Álbuns -------------------------- */
 .album-detalhe {
-    background-color: #1f1f1f;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-
-    background-size: cover;
-    background-position: center;
-
-    color: white;
-
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #1f1f1f;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .album-detalhe:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 .album-detalhes {
-    position: relative;
-
-    background-color: #1f1f1f;
-    padding: 100px 80px;
-    margin: 80px auto;
-    border-radius: 64px;
-    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    max-width: 1200px;
-    width: 90%;
-    min-height: 700px;
-
-    color: #ffffff;
-    text-align: left;
+  position: relative;
+  background-color: #1f1f1f;
+  padding: 100px 80px;
+  margin: 80px auto;
+  border-radius: 64px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 90%;
+  min-height: 700px;
+  color: #ffffff;
+  text-align: left;
 }
 
-
 .btn {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-
-    display: flex;
-    align-items: center;
-    gap: 6px;
-
-    padding: 8px 12px;
-    border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .btn img {
-    width: 16px;
-    height: 16px;
-}
+  width: 16px;
+  height: 16px;
+}      
