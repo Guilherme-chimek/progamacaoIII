@@ -80,7 +80,32 @@ footer {
     padding: 20px;
     margin: 20px;
 }
+ h3 {
+    color: #4b6434; 
+  }
 
+
+  ul.faixas {
+    list-style: none;
+    padding: 0;
+  }
+
+
+  ul.faixas li {
+    background-color: rgba(75, 96, 67, 0.5);
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Efeito ao passar o mouse */
+  ul.faixas li:hover {
+    background-color: rgba(75, 96, 67, 0.7);
+    cursor: pointer;
+  }
+</style>
 /* --------------------------
    Cards simples
 -------------------------- */
@@ -120,9 +145,8 @@ footer {
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-/* 🔥 BOX PRINCIPAL (corrigida) */
 .album-detalhes {
-    position: relative; /* ✅ ESSENCIAL para o botão */
+    position: relative;
 
     background-color: #1f1f1f;
     padding: 100px 80px;
@@ -143,7 +167,7 @@ footer {
     text-align: left;
 }
 
-/* 🔘 BOTÃO */
+
 .btn {
     position: absolute;
     bottom: 10px;
@@ -161,7 +185,6 @@ footer {
     cursor: pointer;
 }
 
-/* 🖼️ IMAGEM DO BOTÃO */
 .btn img {
     width: 16px;
     height: 16px;
