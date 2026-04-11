@@ -79,7 +79,7 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819') center/cover no-repeat;
+  background: url('img/Mitski-The-Land-1.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   padding: 0 10%;
