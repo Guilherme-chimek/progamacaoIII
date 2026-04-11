@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mitski - Site</title>
+  <title>The Smiths - Site</title>
 
   <!-- Fonte melhor -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   <!-- NAVBAR -->
   <header>
     <nav class="navbar">
-      <div class="logo">Mitski</div>
+      <div class="logo">The Smiths</div>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Início</a></li>
@@ -24,7 +24,7 @@
         <li><a href="#albuns">Álbuns</a></li>
         <li><a href="#destaques">Destaques</a></li>
         <li><a href="#contato">Contato</a></li>
-      </ul>
+      </ul> 
 
       <div class="menu-toggle" id="menuToggle">&#9776;</div>
     </nav>
@@ -33,8 +33,8 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Mitski</h1>
-      <p>Explorando emoções cruas através da música</p>
+      <h1>The Smiths</h1>
+      <p>The Smiths: onde a melancolia vira poesia e a solidão ganha som.</p>
       <a href="#historia" class="btn">Conheça mais</a>
     </div>
   </section>
@@ -42,7 +42,7 @@
   <!-- HISTÓRIA -->
   <section class="historia" id="historia">
     <div class="container historia-container">
-      <img src="img/Mitski_2019.jpg" alt="Mitski">
+      <img src="img/The_Smiths_(1984_Sire_publicity_photo)_002.jpg" alt="TheSmiths">
 
       <div class="texto">
         <h2>História</h2>
@@ -65,55 +65,45 @@
 
       <div class="grid">
         <div class="card">
-          <img src="img/puberty_2.jpg" alt="">
-          <h3>Puberty 2</h3>
-          <p>2016</p>
+          <img src="img/The_Smiths_album.jpg" alt="">
+          <h3>The Smiths</h3>
+          <p>1984</p>
+          <button onclick="abrirMusica('https://open.spotify.com/album/6cI1XoZsOhkyrCwtuI70CN?si=I85KgAVMTMGhBjzqljK6Tg')">Ouvir</button>
         </div>
 
         <div class="card">
-          <img src="https://upload.wikimedia.org/wikipedia/en/2/26/Mitski_Be_the_Cowboy.png" alt="">
-          <h3>Be the Cowboy</h3>
-          <p>2018</p>
+          <img src="img/Meat_is_Murder.jpg" alt="">
+          <h3>Meat is Murder</h3>
+          <p>1985</p>
+          <button onclick="abrirMusica('https://open.spotify.com/intl-pt/album/5DM1qCdgGt2zbknnsVn1Ca?si=_QWOw_pTQ7O1E7aDJyawHQ')">Ouvir</button>
         </div>
 
         <div class="card">
-          <img src="https://upload.wikimedia.org/wikipedia/en/7/70/Mitski_-_Laurel_Hell.png" alt="">
-          <h3>Laurel Hell</h3>
-          <p>2022</p>
+          <img src="img/The_Queen_is_Dead.jpg" alt="">
+          <h3>The Queen is Dead</h3>
+          <p>1986</p>
+          <button onclick="abrirMusica('https://open.spotify.com/intl-pt/album/5Y0p2XCgRRIjna91aQE8q7?si=YWuIXdH_Tna2XVB6kT7Wkg')">Ouvir</button>
         </div>
-
         <div class="card">
-          <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Mitski_-_The_Land_Is_Inhospitable.png" alt="">
-          <h3>The Land Is Inhospitable</h3>
-          <p>2023</p>
+          <img src="img/louder_than_bombs.jpg" alt="">
+          <h3>Louder than bombs</h3>
+          <button onclick="abrirMusica('https://open.spotify.com/intl-pt/album/45StnugV9WQMQwk4rRoTy8?si=JngYjUHYS9aveffAdr-q0w')">Ouvir</button>
+          <p>1987</p>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="grid">
+        <div></div>
         <div class="card">
-          <img src="img/puberty_2.jpg" alt="">
-          <h3>Puberty 2</h3>
-          <p>2016</p>
+          <img src="img/Strangeways_here_we_come.jpg" alt="">
+          <h3>Strangeways, Here We Come</h3>
+          <button onclick="abrirMusica('https://open.spotify.com/intl-pt/album/7jfexk2w5aDI25njkN0UGg?si=Mwfzk6O8TU2K_o1bPU2L8w')">Ouvir</button>
+          <p>1987</p>
         </div>
-
         <div class="card">
-          <img src="https://upload.wikimedia.org/wikipedia/en/2/26/Mitski_Be_the_Cowboy.png" alt="">
-          <h3>Be the Cowboy</h3>
-          <p>2018</p>
+          <img src="img/Rank.jpg" alt="">
+          <h3>Rank</h3>
+          <button onclick="abrirMusica('https://open.spotify.com/intl-pt/album/06Ey2y54V4aGjP5EsovA2O?si=LuJOUG4tTmOo6BMciPFDJg')">Ouvir</button>
+          <p>1988</p>
         </div>
-
-        <div class="card">
-          <img src="https://upload.wikimedia.org/wikipedia/en/7/70/Mitski_-_Laurel_Hell.png" alt="">
-          <h3>Laurel Hell</h3>
-          <p>2022</p>
-        </div>
-
-        <div class="card">
-          <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Mitski_-_The_Land_Is_Inhospitable.png" alt="">
-          <h3>The Land Is Inhospitable</h3>
-          <p>2023</p>
-        </div>
+        <div></div>
       </div>
     </div>
   </section>
@@ -125,18 +115,18 @@
 
       <div class="musicas">
         <div class="musica">
-          <p>Washing Machine Heart</p>
-          <button onclick="abrirMusica('https://www.youtube.com/watch?v=3vjkh-acmTE')">Ouvir</button>
+          <p>There Is a Light That Never Goes Out</p>
+          <button onclick="abrirMusica('http://youtube.com/watch?v=siO6dkqidc4&list=RDsiO6dkqidc4&start_radio=1')">Ouvir</button>
         </div>
 
         <div class="musica">
-          <p>Nobody</p>
-          <button onclick="abrirMusica('https://www.youtube.com/watch?v=qooWnw5rEcI')">Ouvir</button>
+          <p>Back to the Old House</p>
+          <button onclick="abrirMusica('https://www.youtube.com/watch?v=laXY5e5JaV0&list=RDlaXY5e5JaV0&start_radio=1')">Ouvir</button>
         </div>
 
         <div class="musica">
-          <p>First Love / Late Spring</p>
-          <button onclick="abrirMusica('https://www.youtube.com/watch?v=WCphVz0ZGns')">Ouvir</button>
+          <p>Bigmouth Strikes Again</p>
+          <button onclick="abrirMusica('https://www.youtube.com/watch?v=PtzhvJh9NRY&list=RDPtzhvJh9NRY&start_radio=1')">Ouvir</button>
         </div>
       </div>
     </div>

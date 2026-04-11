@@ -6,8 +6,8 @@
 }
 
 :root {
-  --bg: #0d0d0d;
-  --bg-soft: #161616;
+  --bg: #2c3424;
+  --bg-soft: #3f4e40;
   --primary: #ffffff;
   --secondary: #b3b3b3;
   --accent: #e63946;
@@ -78,8 +78,8 @@ body {
 
 /* HERO */
 .hero {
-  height: 100vh;
-  background: url('img/Mitski-The-Land-1.jpg') center/cover no-repeat;
+  height: 150vh;
+  background: url('img/The-Smiths-header.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -105,7 +105,7 @@ body {
 }
 
 .hero p {
-  color: var(--secondary);
+  color:#e63946;
   font-size: 1.2rem;
 }
 
