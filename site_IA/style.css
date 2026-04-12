@@ -190,10 +190,9 @@ button:active,
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  border-color: var(--accent);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transform: translateY(-5px);
 }
+
 /* DESTAQUES */
 .musicas {
   display: flex;
