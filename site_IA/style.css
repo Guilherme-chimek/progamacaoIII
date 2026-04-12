@@ -92,20 +92,33 @@ body {
 .hero p {
   color: var(--accent);
 }
-
-/* BOTÃO */
-.btn {
+/* BOTÕES */
+.btn,
+button,
+.musica button {
   display: inline-block;
-  margin-top: 20px;
   padding: 10px 25px;
   background: var(--accent);
   color: white;
+  border: none;
   border-radius: 25px;
-  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
-.btn:hover {
+/* HOVER */
+.btn:hover,
+button:hover,
+.musica button:hover {
+  transform: translateY(-2px);
   background: #13160f;
+}
+
+/* CLICK (sensação profissional) */
+.btn:active,
+button:active,
+.musica button:active {
+  transform: scale(0.97);
 }
 
 /* HISTÓRIA */
@@ -128,7 +141,7 @@ body {
   color: var(--secondary);
 }
 
-/* INTEGRANTES (SIMPLES E LIMPO) */
+/* INTEGRANTES */
 .lista-integrantes {
   list-style: none;
 }
@@ -142,14 +155,15 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+
 .lista-integrantes img {
   width: 140px;
   border-radius: 8px;
 }
 
 .lista-integrantes li p {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 80%;
+  font-weight: 65%;
 }
 
 /* ÁLBUNS */
@@ -162,9 +176,11 @@ body {
 .card {
   background: var(--bg-soft);
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
   border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .card img {
@@ -174,9 +190,10 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
-
 /* DESTAQUES */
 .musicas {
   display: flex;
