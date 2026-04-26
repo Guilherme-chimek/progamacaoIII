@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Smiths - Site Oficial</title>
+
+  <title>The Smiths - Site</title>
+
+  <!-- Fonte melhor -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- NAVBAR -->
   <header>
     <nav class="navbar">
       <div class="logo">The Smiths</div>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Início</a></li>
         <li><a href="#historia">História</a></li>
@@ -20,7 +26,8 @@
         <li><a href="#destaques">Destaques</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul> 
-      <div class="menu-toggle" id="menuToggle">☰</div>
+
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
     </nav>
   </header>
 
@@ -36,14 +43,15 @@
   <!-- HISTÓRIA -->
   <section class="historia" id="historia">
     <div class="container historia-container">
-      <img src="img/The_Smiths_(1984_Sire_publicity_photo)_002.jpg" alt="The Smiths">
+      <img src="img/The_Smiths_(1984_Sire_publicity_photo)_002.jpg" alt="TheSmiths">
+
       <div class="texto">
         <h2>História</h2>
         <p>
           The Smiths foi uma banda inglesa formada em 1982, em Manchester, que rapidamente se destacou por seu som melancólico 
           e letras introspectivas. Liderada por Morrissey nos vocais e Johnny Marr na guitarra, o grupo criou uma identidade única
           ao misturar jangle pop com temas como solidão, amor não correspondido e crítica social. Com álbuns marcantes como 
-          <strong>The Queen Is Dead (1986)</strong>, tornaram-se uma das bandas mais influentes do rock alternativo britânico.
+          The Queen Is Dead (1986), tornaram-se uma das bandas mais influentes do rock alternativo britânico.
         </p>
         <br>
         <p>
@@ -54,102 +62,103 @@
       </div>
     </div>
   </section>
+<section class="integrantes" id="integrantes">
+  <div class="container">
+    <h2>Integrantes</h2>
+    <ul class="lista-integrantes">
+      
+      <li>
+        <p>Morrissey - Vocais</p>
+        <img src="img/morrissey.jpg" alt="Morrissey">
+        <div class="overlay">
+          <p>Vocalista e principal letrista dos Smiths, Morrissey se destacou por sua personalidade marcante e letras 
+            profundamente introspectivas. Suas composições abordam temas como solidão, identidade, relações humanas e 
+            críticas à sociedade, sempre com um tom irônico e poético. Após o fim da banda, tornou-se uma figura 
+            controversa por declarações políticas e sociais que geraram críticas e dividiram opiniões, mantendo-se 
+            constantemente em evidência tanto pela música quanto por suas posições.</p>
+        </div>
+      </li>
+      <li>
+        <p>Johnny - Guitarra</p>
+        <img src="img/johnny_marr.jpg" alt="Johnny Marr">
+        <div class="overlay">
+          <p>Guitarrista e principal responsável pela sonoridade da banda, Johnny Marr revolucionou o uso da guitarra no 
+            rock alternativo com riffs criativos e melodias sofisticadas. Sua parceria com Morrissey foi essencial para o 
+            sucesso dos Smiths. Ao longo dos anos, manteve uma postura mais reservada, mas se envolveu em desentendimentos 
+            públicos com Morrissey, especialmente sobre uma possível reunião da banda e diferenças de posicionamento.</p>
+        </div>
+      </li>
 
-  <!-- INTEGRANTES -->
-  <section class="integrantes" id="integrantes">
-    <div class="container">
-      <h2>Integrantes</h2>
-      <ul class="lista-integrantes">
-        <li>
-          <img src="img/morrissey.jpg" alt="Morrissey">
-          <div class="info">
-            <h3>Morrissey</h3>
-            <p>Vocalista e principal letrista</p>
-            <div class="overlay">
-              <p>Vocalista e principal letrista dos Smiths, Morrissey se destacou por sua personalidade marcante e letras 
-                profundamente introspectivas. Suas composições abordam temas como solidão, identidade, relações humanas e 
-                críticas à sociedade, sempre com um tom irônico e poético.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <img src="img/johnny_marr.jpg" alt="Johnny Marr">
-          <div class="info">
-            <h3>Johnny Marr</h3>
-            <p>Guitarrista principal</p>
-            <div class="overlay">
-              <p>Guitarrista e principal responsável pela sonoridade da banda, Johnny Marr revolucionou o uso da guitarra no 
-                rock alternativo com riffs criativos e melodias sofisticadas. Sua parceria com Morrissey foi essencial para o sucesso dos Smiths.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <img src="img/andy_rourke.jpg" alt="Andy Rourke">
-          <div class="info">
-            <h3>Andy Rourke</h3>
-            <p>Baixista</p>
-            <div class="overlay">
-              <p>Andy Rourke trouxe um estilo de baixo diferenciado, com linhas melódicas que ajudavam a construir a identidade
-                sonora da banda. Seu trabalho foi essencial para a profundidade das músicas.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <img src="img/mike_joyce.jpg" alt="Mike Joyce">
-          <div class="info">
-            <h3>Mike Joyce</h3>
-            <p>Baterista</p>
-            <div class="overlay">
-              <p>Baterista conhecido por sua precisão e consistência, Mike Joyce sustentava o ritmo das composições com eficiência
-                e equilíbrio. Teve papel importante na estrutura musical da banda.</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+      <li>
+        <p>Andy Rourke - Baixo</p>
+        <img src="img/andy_rourke.jpg" alt="Andy Rourke">
+        <div class="overlay">
+          <p>Andy Rourke trouxe um estilo de baixo diferenciado, com linhas melódicas que ajudavam a construir a identidade
+             sonora da banda. Seu trabalho foi essencial para a profundidade das músicas. Fora dos palcos, enfrentou 
+             problemas pessoais, incluindo dependência química, e participou de uma disputa judicial com Morrissey e Marr 
+             sobre direitos autorais, na qual obteve decisão favorável.</p>
+        </div>
+      </li>
 
+      <li>
+        <p>Mike Joyce - Bateria</p>
+        <img src="img/mike_joyce.jpg" alt="Mike Joyce">
+        <div class="overlay">
+          <p>Baterista conhecido por sua precisão e consistência, Mike Joyce sustentava o ritmo das composições com eficiência
+             e equilíbrio. Apesar de seu estilo discreto, teve papel importante na estrutura musical da banda. Também esteve 
+             envolvido na disputa judicial por divisão de lucros, evidenciando conflitos internos que marcaram o fim dos Smiths.</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
   <!-- ÁLBUNS -->
   <section class="albuns" id="albuns">
     <div class="container">
       <h2>Álbuns</h2>
+
       <div class="grid">
         <div class="card">
-          <img src="img/The_Smiths_album.jpg" alt="The Smiths">
+          <img src="img/The_Smiths_album.jpg" alt="">
           <h3>The Smiths</h3>
           <p>1984</p>
           <button onclick="abrirMusica('https://open.spotify.com/album/6cI1XoZsOhkyrCwtuI70CN?si=I85KgAVMTMGhBjzqljK6Tg')">Ouvir</button>
         </div>
+
         <div class="card">
-          <img src="img/Meat_is_Murder.jpg" alt="Meat is Murder">
+          <img src="img/Meat_is_Murder.jpg" alt="">
           <h3>Meat is Murder</h3>
           <p>1985</p>
           <button onclick="abrirMusica('https://open.spotify.com/intl-pt/album/5DM1qCdgGt2zbknnsVn1Ca?si=_QWOw_pTQ7O1E7aDJyawHQ')">Ouvir</button>
         </div>
+
         <div class="card">
-          <img src="img/The_Queen_is_Dead.jpg" alt="The Queen is Dead">
+          <img src="img/The_Queen_is_Dead.jpg" alt="">
           <h3>The Queen is Dead</h3>
           <p>1986</p>
           <button onclick="abrirMusica('https://open.spotify.com/intl-pt/album/5Y0p2XCgRRIjna91aQE8q7?si=YWuIXdH_Tna2XVB6kT7Wkg')">Ouvir</button>
         </div>
         <div class="card">
-          <img src="img/louder_than_bombs.jpg" alt="Louder than Bombs">
-          <h3>Louder than Bombs</h3>
+          <img src="img/louder_than_bombs.jpg" alt="">
+          <h3>Louder than bombs</h3>
           <p>1987</p>
           <button onclick="abrirMusica('https://open.spotify.com/intl-pt/album/45StnugV9WQMQwk4rRoTy8?si=JngYjUHYS9aveffAdr-q0w')">Ouvir</button>
         </div>
+        <div></div>
         <div class="card">
-          <img src="img/Strangeways_here_we_come.jpg" alt="Strangeways, Here We Come">
+          <img src="img/Strangeways_here_we_come.jpg" alt="">
           <h3>Strangeways, Here We Come</h3>
-          <p>1987</p>
           <button onclick="abrirMusica('https://open.spotify.com/intl-pt/album/7jfexk2w5aDI25njkN0UGg?si=Mwfzk6O8TU2K_o1bPU2L8w')">Ouvir</button>
+          <p>1987</p>
         </div>
         <div class="card">
-          <img src="img/Rank.jpg" alt="Rank">
+          <img src="img/Rank.jpg" alt="">
           <h3>Rank</h3>
-          <p>1988</p>
           <button onclick="abrirMusica('https://open.spotify.com/intl-pt/album/06Ey2y54V4aGjP5EsovA2O?si=LuJOUG4tTmOo6BMciPFDJg')">Ouvir</button>
+          <p>1988</p>
         </div>
+        <div></div>
       </div>
     </div>
   </section>
@@ -158,50 +167,25 @@
   <section class="destaques" id="destaques">
     <div class="container">
       <h2>Destaques</h2>
+
       <div class="musicas">
         <div class="musica">
-          <div class="musica-info">
-            <h3>There Is a Light That Never Goes Out</h3>
-            <p>1986 • The Queen Is Dead</p>
-          </div>
-          <button onclick="abrirMusica('https://youtube.com/watch?v=siO6dkqidc4&list=RDsiO6dkqidc4&start_radio=1')">Ouvir</button>
+          <p>There Is a Light That Never Goes Out</p>
+          <button onclick="abrirMusica('http://youtube.com/watch?v=siO6dkqidc4&list=RDsiO6dkqidc4&start_radio=1')">Ouvir</button>
         </div>
+
         <div class="musica">
-          <div class="musica-info">
-            <h3>Back to the Old House</h3>
-            <p>1984 • The Smiths</p>
-          </div>
+          <p>Back to the Old House</p>
           <button onclick="abrirMusica('https://www.youtube.com/watch?v=laXY5e5JaV0&list=RDlaXY5e5JaV0&start_radio=1')">Ouvir</button>
         </div>
+
         <div class="musica">
-          <div class="musica-info">
-            <h3>Bigmouth Strikes Again</h3>
-            <p>1986 • The Queen Is Dead</p>
-          </div>
+          <p>Bigmouth Strikes Again</p>
           <button onclick="abrirMusica('https://www.youtube.com/watch?v=PtzhvJh9NRY&list=RDPtzhvJh9NRY&start_radio=1')">Ouvir</button>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- CONTATO -->
-  <section class="contato" id="contato">
-    <div class="container">
-      <h2>Contato</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu email" required>
-        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
-        <button type="submit">Enviar Mensagem</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2024 The Smiths Fan Site - Todos os direitos reservados</p>
-  </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
